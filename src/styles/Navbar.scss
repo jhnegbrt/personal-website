@@ -34,7 +34,7 @@
   justify-content: space-between;
 
   h3{
-    font-size: 3vh;
+    font-size: 2vh;
     margin: 3%;
     font-family: 'Roboto Slab', serif;
   }
@@ -56,12 +56,26 @@
   left: 0;
   top: 0;
   height: 100vh;
-  width: 33vw;
+  width: 100vw;
   z-index:1000;
   background-color: black;
   color: white;
   font-family: 'Roboto', sans-serif;
   transition: transform .4s cubic-bezier(0, 0.48, 1, 1);
+
+  li{
+    text-align: center;
+    margin-top: 12vh;
+    margin-left: auto;
+  }
+
+  button{
+    display: block;
+    margin-top: 12vh;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .show{
@@ -69,7 +83,7 @@
 }
 
 .hide{
-  transform: translateX(-33vw)
+  transform: translateX(-100vw)
 }
 
 

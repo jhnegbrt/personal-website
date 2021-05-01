@@ -47,6 +47,7 @@ class Navbar extends React.Component{
         </header>
         <div id="mobile-menu" className={visibility}>
           {menu}
+          <button onClick={this.toggleMenu}>-Close Menu-</button>
         </div>
       </div>
     )
