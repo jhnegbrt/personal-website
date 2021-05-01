@@ -2,6 +2,7 @@ import './styles/App.scss'
 import './styles/Reset.css'
 import Navbar from './components/navbar'
 import About from './components/about'
+import Technologies from './components/technologies'
 // import MobileNavbar from './components/navbar_mobile'
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <div className="app">
       <Navbar />
       <About />
+      <Technologies />
       <div>My App</div>
     </div>
   );
