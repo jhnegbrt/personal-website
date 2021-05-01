@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
 
-header{
+.desktop-header{
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -29,10 +29,47 @@ header{
 
 }
 
-#name{
-  margin: 5%;
-  width: 30%;
-  display: inline-block
+.mobile-header{
+  display: flex;
+  justify-content: space-between;
+
+  h3{
+    font-size: 3vh;
+    margin: 3%;
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  button{
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    margin: 3%;
+    padding: 1%;
+    font-family: 'Roboto', sans-serif;
+
+  }
+}
+
+#mobile-menu{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 33vw;
+  z-index:1000;
+  background-color: black;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  transition: transform .4s cubic-bezier(0, 0.48, 1, 1);
+}
+
+.show{
+  transform: translateX(0)
+}
+
+.hide{
+  transform: translateX(-33vw)
 }
 
 
