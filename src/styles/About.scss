@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+
+
+.about{
+  display: flex
+}
+
+#picture{
+  width: 50vw;
+  height: auto;
+}
+
+.about-text{
+  width: 50vw;
+  h1{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 6vh;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+  }
+
+  h2, h3{
+
+    font-family: 'Roboto', sans-serif;
+  }
+
+  h2{
+    font-size: 3vh;
+  }
+
+  h3{
+    font-size: 2vh;
+  }
+
+  .info-text{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30vw;
+    padding: 3%;
+    background-color: rgb(209, 209, 209);
+  }
+
+}

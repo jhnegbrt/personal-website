@@ -23,16 +23,17 @@ class Navbar extends React.Component{
     let screenWidth = window.innerWidth
     let menu = (
       <ul>
+        <li>Home</li>
         <li>About</li>
         <li>Projects</li>
         <li>Resume</li>
-        <li>Skills</li>
+        <li>Tools</li>
         <li>Contact</li>
       </ul>
     )
     let navbar = (
       <header className="desktop-header">
-        <h3>Jack Egbert</h3>
+        <h3>JE</h3>
         {menu}
       </header>
     )
@@ -42,7 +43,7 @@ class Navbar extends React.Component{
     let mobileNavbar = (
       <div>
         <header className="mobile-header">
-          <h3>Jack Egbert</h3> 
+          <h3>John Egbert</h3> 
           <button onClick={this.toggleMenu}>Menu</button>
         </header>
         <div id="mobile-menu" className={visibility}>
