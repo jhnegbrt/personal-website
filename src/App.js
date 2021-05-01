@@ -1,6 +1,12 @@
+import Navbar from './components/navbar'
+// import MobileNavbar from './components/navbar_mobile'
+
 function App() {
   return (
-    <div>My App</div>
+    <div>
+      <Navbar />
+      <div>My App</div>
+    </div>
   );
 }
 
