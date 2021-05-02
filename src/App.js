@@ -3,6 +3,7 @@ import './styles/Reset.css'
 import Navbar from './components/navbar'
 import About from './components/about'
 import Technologies from './components/technologies'
+import Projects from './components/projects'
 // import MobileNavbar from './components/navbar_mobile'
 
 function App() {
@@ -10,8 +11,9 @@ function App() {
     <div className="app">
       <Navbar />
       <About />
+      <Projects />
       <Technologies />
-      <div>My App</div>
+ 
     </div>
   );
 }

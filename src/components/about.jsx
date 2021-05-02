@@ -13,8 +13,8 @@ class About extends React.Component{
         <div className="about-text">
           <h1>Jack Egbert</h1>
           <h2>Software Engineering - Web Design & Development</h2>
+          <h2>A few bits about me:</h2>
           <div className="info-text">
-            <h2>A bit about me:</h2>
             <h3>My definition of fun:</h3>
             <h3>Working with others, or for others, to bring things into
               the world that didn't exist before

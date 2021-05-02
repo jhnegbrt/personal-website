@@ -34,6 +34,11 @@ class Technologies extends React.Component{
             <img id="jQuery" src={"https://upload.wikimedia.org/wikipedia/commons/f/fd/JQuery-Logo.svg"} />
           </div>
         </div>
+        <div>
+          <h3>Whether I am leading the integration of a new technology, or responsible for understanding the effects a legacy 
+            system has on a tech stack, the exploration of limits of any technology excites me
+          </h3>
+        </div>
       </div>
 
 

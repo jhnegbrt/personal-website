@@ -1,9 +1,16 @@
 .technologies{
-  width: 50vw;
-  
+
+  // width: 100vw;
+  display: flex;
 }
 
 .technology-logos {
+  div{
+    width: 100%;
+    margin-left: 10%;
+    // margin-right: auto;
+  }
+  
   img{
     width: 15%;
     margin: 1%;
