@@ -1,5 +1,6 @@
 .projects-container{
   position: relative;
+  overflow-x:hidden;
 
   .spacer-div{
     height: 10vh;
@@ -16,15 +17,27 @@
   margin-left: auto;
   margin-right: auto;
   border: 1px solid gray;
-
+  
   p{
     width: 40%;
-    text-align: center
+    text-align: center;
+    transition: transform .4s cubic-bezier(0, 0.48, 1, 1);
+    transform: translateX(-100vw);
+  }
+
+  .view{
+    transform: translateX(0vw);
+  }
+
+
+  #project-image{
+    width: 40%;
+    height: auto;
+    transition: transform .4s cubic-bezier(0, 0.48, 1, 1);
+  }
+
+  .no-view{
+    transform: translateX(100vw);
   }
 }
 
-
-#project-image{
-  width: 40%;
-  height: auto;
-}
