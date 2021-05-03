@@ -5,6 +5,10 @@
   box-sizing: border-box;
   display: flex;
   border-bottom: 1px solid black;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  z-index:5;
 
   h3{
     margin: 3%;
@@ -21,10 +25,14 @@
     margin-right: 5%;
   }
 
-  li{
+  a{
     list-style: none;
     padding: 1%;
     box-sizing: border-box;
+  }
+
+  .active{
+    text-decoration: underline;
   }
 
 }

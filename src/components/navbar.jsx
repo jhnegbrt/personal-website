@@ -29,13 +29,13 @@ class Navbar extends React.Component{
     let screenWidth = window.innerWidth
     let menu = (
       <ul>
-        <Link activeClass="active" to="home" spy={true} smooth={true} offset={50} duration={500}>
+        <Link activeClass="active" to="home" spy={true} smooth={true} offset={-200} duration={500}>
           Home
         </Link>
-        <Link activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500}>
+        <Link activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={500}>
           About
         </Link>
-        <Link activeClass="active" to="projects" spy={true} smooth={true} offset={50} duration={500}>
+        <Link activeClass="active" to="projects" spy={true} smooth={true} offset={-100} duration={500}>
           Projects
         </Link>
         <Link activeClass="active" to="Resume" spy={true} smooth={true} offset={50} duration={500}>
@@ -47,12 +47,6 @@ class Navbar extends React.Component{
         <Link activeClass="active" to="contact" spy={true} smooth={true} offset={50} duration={500}>
           Contact
         </Link>
-        {/* <li>Home</li>
-        <li>About</li>
-        <li>Projects</li>
-        <li>Resume</li>
-        <li>Tools</li>
-        <li>Contact</li> */}
       </ul>
     )
     let navbar = (

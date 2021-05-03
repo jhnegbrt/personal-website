@@ -9,7 +9,7 @@ class Technologies extends React.Component{
 
   render(){
     return(
-      <div name="technologies" className="technologies">
+      <div name="tools" className="technologies">
         <div className="technology-logos">
           <div>
             <img src={"https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"} />
