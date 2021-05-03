@@ -21,11 +21,12 @@ function About(){
 
     <div name="about" className="about-container">
       <div className="about-spacer"></div>
-      {/* <h2>About</h2> */}
+      <h2>A bit about me...</h2>
       <AboutDisplay question={firstQuestion} answer={firstAnswer} side={"left"}/>
       <AboutDisplay question={secondQuestion} answer={secondAnswer} side={"right"}/>
       <AboutDisplay question={thirdQuestion} answer={thirdAnswer} side={"left"}/>
       <AboutDisplay question={fourthQuestion} answer={fourthAnswer} side={"right"}/>
+      <div className="about-spacer"></div>
     </div>
 
   )

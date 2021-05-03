@@ -4,6 +4,8 @@
   position: relative;
   overflow-x:hidden;
   font-family: 'Roboto Slab', serif;
+  background-color: rgb(215, 235, 248);
+
   
   h2{
     font-family: 'Roboto Slab', serif;
@@ -24,12 +26,13 @@
   }
 
   .about-container-right{
+    margin-top: 5vh;
     width: 30%;
     border-right: none;
-    margin-left: 50%;
+    margin-left: 55%;
     background-color: rgb(215, 235, 248);
     border-radius: 20px;
-    height: 30vh;
+    height: 15vh;
 
 
     .off-right{
@@ -56,12 +59,13 @@
   }
 
   .about-container-left{
+    margin-top: 5vh;
     width: 30%;
     border-left: none;
-    margin-left: 20%;
+    margin-left: 15%;
     background-color: rgb(215, 235, 248);
     border-radius: 10px;
-    height: 30vh;
+    height: 15vh;
 
 
     .off-left{
