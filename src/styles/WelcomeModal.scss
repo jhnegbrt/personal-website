@@ -12,12 +12,15 @@
   .block-3,
   .block-4{
     display: block;
-    background-color: black;
+    // background-color: black;
     height: 50%;
     width: 50%;
     position: fixed;
     z-index:1000;
     transition: transform .4s cubic-bezier(0, 0.48, 1, 1);
+  }
+
+  .block-1{
   }
 
   .block-2{
@@ -52,31 +55,35 @@
 
 .off-screen{
 
-  .block-1,
-  .block-2,
-  .block-3,
-  .block-4{
-    // transition: transform .4s cubic-bezier(0, 0.48, 1, 1);
-  }
 
   .block-1{
-    transform: translateX(100vw);
-    transition: transform 2s cubic-bezier(0, 0.48, 1, 1);
+    transition-delay: 500ms;
+    background-color: rgb(215, 235, 248);
+    transform: translateX(-100vw);
+    transition: transform 2s cubic-bezier(0.97, 0.15, 0.31, 0.74);
   }
 
   .block-2{
-    transform: translateX(-100vh);
-    transition: transform 2s cubic-bezier(0, 0.48, 1, 1);
+    transition-delay: 500ms;
+    background-color: rgb(255, 255, 255);
+    transform: translateY(-100vh);
+    transition: transform 2s cubic-bezier(0.97, 0.15, 0.31, 0.74);
+    border: 1px solid black
   }
 
   .block-3{
-    transform: translateX(-100vw);
-    transition: transform 2s cubic-bezier(0, 0.48, 1, 1);
+    transition-delay: 500ms;
+    background-color: rgb(215, 235, 248);
+    transform: translateX(100vw);
+    transition: transform 2s cubic-bezier(0.97, 0.15, 0.31, 0.74);
   }
 
   .block-4{
-    transform: translateX(100vh);
-    transition: transform 2s cubic-bezier(0, 0.48, 1, 1);
+    background-color: rgb(161, 161, 161);
+    transform: translateY(100vh);
+    transition-delay: 500ms;
+    transition: transform 2s cubic-bezier(0.97, 0.15, 0.31, 0.74);
+    border: 1px solid black
   }
 
 }
