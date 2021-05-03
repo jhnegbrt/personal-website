@@ -10,7 +10,7 @@ class WelcomeModal extends React.Component{
     let welcomeModal = (
       <div className={this.props.className ? "welcomeModal off-screen" : "welcomeModal"}>
         <div className="block-1"></div>
-          {/* <button onClick={this.props.closeModal}>Enter</button> */}
+          <button onClick={this.props.closeModal}>Enter</button>
         <div className="block-2"></div>
         <div className="block-3"></div>
         <div className="block-4"></div>
