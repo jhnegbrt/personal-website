@@ -28,7 +28,6 @@ function App() {
       <Technologies />
     </div>
   )
-  debugger
   let welcomeModal = (
     
     <div className="app">

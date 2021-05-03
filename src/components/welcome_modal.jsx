@@ -7,15 +7,10 @@ class WelcomeModal extends React.Component{
   }
 
   render(){
-    debugger
     let welcomeModal = (
       <div className={this.props.className ? "welcomeModal off-screen" : "welcomeModal"}>
         <div className="block-1"></div>
-        <div className="modal-intro">
-            {/* <h2>Welcome</h2> */}
-            {/* <h3>johnwegbert.com</h3> */}
-            <button onClick={this.props.closeModal}>Enter</button>
-          </div>
+          <button onClick={this.props.closeModal}>Enter</button>
         <div className="block-2"></div>
         <div className="block-3"></div>
         <div className="block-4"></div>
@@ -28,3 +23,9 @@ class WelcomeModal extends React.Component{
 }
 
 export default WelcomeModal
+
+        // {/* <div className="modal-intro"> */}
+        //     {/* <h2>Welcome</h2> */}
+        //     {/* <h3>johnwegbert.com</h3> */}
+        //     <button onClick={this.props.closeModal}>Enter</button>
+        // {/* </div> */}
