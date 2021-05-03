@@ -8,9 +8,9 @@ class Home extends React.Component{
 
   render(){
     return(
-      <div name="home" className="about">
+      <div name="home" className="home">
         <img id="picture" src="/ketchikan.JPEG" />
-        <div className="about-text">
+        <div className="home-text">
           <h1>Jack Egbert</h1>
           <h2>Software Engineering - Web Design & Development</h2>
         </div>

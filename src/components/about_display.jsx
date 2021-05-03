@@ -31,7 +31,7 @@ const AboutDisplay = (props) => {
   }, [ref, options])
 
   let right = (
-    <div className={isVisible ? "about-container-right show" : "about-container-right"}>
+    <div className="about-container-right">
       <p className={isVisible ? "question" : "off-right"}>{props.question}</p>
       <p className={isVisible ? "answer" : "off-right"}>{props.answer}</p>
       <div className="about-spacer-v2"></div>
@@ -41,7 +41,7 @@ const AboutDisplay = (props) => {
   )
 
   let left = (
-    <div className={isVisible ? "about-container-left show" : "about-container-left"}>
+    <div className="about-container-left">
       <p className={isVisible ? "question" : "off-left"}>{props.question}</p>
       <p className={isVisible ? "answer" : "off-left"}>{props.answer}</p>
       <div className="about-spacer-v2"></div>

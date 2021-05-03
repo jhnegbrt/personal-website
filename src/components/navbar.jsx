@@ -27,6 +27,8 @@ class Navbar extends React.Component{
     let scroll = Scroll.animateScroll
     let scrollSpy = Scroll.scrollSpy
     let screenWidth = window.innerWidth
+    let screenHeight = window.innerHeight
+    let projectOffset = screenHeight / 5
     let menu = (
       <ul>
         <Link activeClass="active" to="home" spy={true} smooth={true} offset={-200} duration={500}>
@@ -35,7 +37,7 @@ class Navbar extends React.Component{
         <Link activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={500}>
           About
         </Link>
-        <Link activeClass="active" to="projects" spy={true} smooth={true} offset={-100} duration={500}>
+        <Link activeClass="active" to="projects" spy={true} smooth={true} offset={projectOffset} duration={500}>
           Projects
         </Link>
         <Link activeClass="active" to="Resume" spy={true} smooth={true} offset={50} duration={500}>
@@ -51,8 +53,10 @@ class Navbar extends React.Component{
     )
     let navbar = (
       <header className="desktop-header">
-        <h3>JE</h3>
-        {menu}
+        <div className="inner-header">
+          <h3>JE</h3>
+          {menu}
+        </div>
       </header>
     )
     

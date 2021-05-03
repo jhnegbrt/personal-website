@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
 
 
-.about{
-  display: flex
+.home{
+  display: flex;
+  border-bottom: 1px solid gray;
 }
 
 #picture{
@@ -11,7 +12,7 @@
   border-right: 1px solid gray
 }
 
-.about-text{
+.home-text{
   width: 50vw;
   h1{
     text-align: center;

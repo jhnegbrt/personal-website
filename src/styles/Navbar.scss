@@ -9,31 +9,45 @@
   top: 0px;
   background-color: white;
   z-index:5;
+  height: 15vh;
+  top: -8vh;
+  align-items: center;
 
-  h3{
-    margin: 3%;
-    display: inline;
-    font-family: 'Roboto Slab', serif;
-    font-size: 4vh;
-  }
-  ul{
-    font-family: 'Roboto', sans-serif;
-    font-size: 3vh;
+  .inner-header{
+    width:100%;
     display: flex;
-    box-sizing: border-box;
-    margin: auto;
-    margin-right: 5%;
+    height: 7vh;
+    position: sticky;
+    top: 0;
+    align-items: center;
+
+    h3{
+      margin-left: 3%;
+      display: inline;
+      font-family: 'Roboto Slab', serif;
+      font-size: 4vh;
+    }
+    ul{
+      font-family: 'Roboto', sans-serif;
+      font-size: 3vh;
+      display: flex;
+      box-sizing: border-box;
+      margin-left: auto;
+      margin-right: 5%;
+    }
+  
+    a{
+      list-style: none;
+      padding: 1%;
+      box-sizing: border-box;
+    }
+  
+    .active{
+      text-decoration: underline;
+    }
   }
 
-  a{
-    list-style: none;
-    padding: 1%;
-    box-sizing: border-box;
-  }
 
-  .active{
-    text-decoration: underline;
-  }
 
 }
 

@@ -1,24 +1,25 @@
 .about-container{
   position: relative;
   overflow-x:hidden;
+  
 
   .about-spacer{
     height: 15vh;
     width: 50%;
-    border-right: 1px solid gray
+
   }
 
   .about-spacer-v2{
     height: 15vh;
     width: 50%;
-    // border-right: 1px solid gray
+
   }
 
   .about-container-right{
     width: 30%;
-    border-left: 1px solid gray;
     border-right: none;
     margin-left: 50%;
+
 
     .off-right{
       transform: translateX(50vw);
@@ -29,7 +30,8 @@
       margin-left: 10%;
       transform:translateX(0);
       transition: transform .2s cubic-bezier(0, 0.48, 1, 1);
-      margin-bottom: 5%
+      margin-bottom: 5%;
+      border-bottom: 1px solid gray;
     }
 
     .answer{
@@ -42,7 +44,6 @@
 
   .about-container-left{
     width: 30%;
-    border-right: 1px solid gray;
     border-left: none;
     margin-left: 20%;
 
@@ -56,6 +57,7 @@
       transform:translateX(0);
       transition: transform .2s cubic-bezier(0, 0.48, 1, 1);
       margin-bottom: 5%;
+      border-bottom: 1px solid gray;
     }
 
     .answer{
