@@ -15,7 +15,7 @@ function Projects(){
     
   return(
 
-    <div className="projects-container">
+    <div name="projects" className="projects-container">
       <div className="spacer-div"></div>
       <Project imgSrc={"/sleuth-page.PNG"} imageSide={"left"} textBody={sleuth}/>
       <div className="spacer-div"></div>

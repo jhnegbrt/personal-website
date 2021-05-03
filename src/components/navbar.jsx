@@ -1,3 +1,5 @@
+
+import * as Scroll from 'react-scroll'
 import { render } from 'react-dom'
 import '../styles/Navbar.scss'
 import React from 'react'
@@ -20,15 +22,37 @@ class Navbar extends React.Component{
   }
 
   render(){
+
+    let Link = Scroll.Link
+    let scroll = Scroll.animateScroll
+    let scrollSpy = Scroll.scrollSpy
     let screenWidth = window.innerWidth
     let menu = (
       <ul>
-        <li>Home</li>
+        <Link activeClass="active" to="home" spy={true} smooth={true} offset={50} duration={500}>
+          Home
+        </Link>
+        <Link activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500}>
+          About
+        </Link>
+        <Link activeClass="active" to="projects" spy={true} smooth={true} offset={50} duration={500}>
+          Projects
+        </Link>
+        <Link activeClass="active" to="Resume" spy={true} smooth={true} offset={50} duration={500}>
+          Resume
+        </Link>
+        <Link activeClass="active" to="tools" spy={true} smooth={true} offset={50} duration={500}>
+          Tools
+        </Link>
+        <Link activeClass="active" to="contact" spy={true} smooth={true} offset={50} duration={500}>
+          Contact
+        </Link>
+        {/* <li>Home</li>
         <li>About</li>
         <li>Projects</li>
         <li>Resume</li>
         <li>Tools</li>
-        <li>Contact</li>
+        <li>Contact</li> */}
       </ul>
     )
     let navbar = (

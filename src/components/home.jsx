@@ -8,7 +8,7 @@ class Home extends React.Component{
 
   render(){
     return(
-      <div className="about">
+      <div name="home" className="about">
         <img id="picture" src="/ketchikan.JPEG" />
         <div className="about-text">
           <h1>Jack Egbert</h1>

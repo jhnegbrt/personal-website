@@ -19,7 +19,7 @@ function About(){
     
   return(
 
-    <div className="about-container">
+    <div name="about" className="about-container">
       <div className="about-spacer"></div>
       <AboutDisplay question={firstQuestion} answer={firstAnswer} side={"left"}/>
       <AboutDisplay question={secondQuestion} answer={secondAnswer} side={"right"}/>
