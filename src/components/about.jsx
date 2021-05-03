@@ -1,37 +1,38 @@
-import React from 'react'
+import React, {useRef, useEffect, useState} from 'react'
 import '../styles/About.scss'
+import AboutDisplay from './about_display'
 
-class About extends React.Component{
-  constructor(props){
-    super(props)
-  }
+function About(){
 
-  render(){
-    return(
-      <div className="about">
-        <img id="picture" src="/ketchikan.JPEG" />
-        <div className="about-text">
-          <h1>Jack Egbert</h1>
-          <h2>Software Engineering - Web Design & Development</h2>
-          <h2>A few bits about me:</h2>
-          <div className="info-text">
-            <h3>My definition of fun:</h3>
-            <h3>Working with others, or for others, to bring things into
-              the world that didn't exist before
-            </h3>
-            <h3>What makes me tick:</h3>
-            <h3>Solving problems that require extending the boundaries
-              of my knowledge
-            </h3>
-            <h3>My favorite projects:</h3>
-            <h3>Found novel use cases for familiar technology or 
-              required learning and utilizing an unfamiliar technology
-            </h3>
-          </div>
-        </div>
-      </div>
-    )
-  }
+
+  // let screenWidth = window.innerWidth
+
+  let firstQuestion = "My definition of fun:"
+  let firstAnswer = "Working with others, or for others, to bring things into the world that didn't exist before"
+//   What makes me tick:
+//     Solving problems that require extending the boundaries
+//     of my knowledge
+//   My favorite projects:
+// Found novel use cases for familiar technology or 
+//     required learning and utilizing an unfamiliar technology
+
+    
+  return(
+
+    <div className="about-container">
+      <div className="about-spacer"></div>
+      <AboutDisplay question={firstQuestion} answer={firstAnswer} side={"left"}/>
+      <div className="about-spacer"></div>
+      <AboutDisplay question={firstQuestion} answer={firstAnswer} side={"right"}/>
+      <div className="about-spacer"></div>
+      <AboutDisplay question={firstQuestion} answer={firstAnswer} side={"left"}/>
+      <div className="about-spacer"></div>
+      <AboutDisplay question={firstQuestion} answer={firstAnswer} side={"right"}/>
+      <div className="about-spacer"></div>
+    </div>
+
+  )
+
 }
 
 export default About

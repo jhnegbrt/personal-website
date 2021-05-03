@@ -8,12 +8,15 @@ const Project = (props) => {
 
   const callback = (entries) =>{
     const [entry] = entries
-    setIsVisible(entry.isIntersecting)
+    if (entry.isIntersecting === true){
+      setIsVisible(entry.isIntersecting)
+    }
+    
   }
 
   const options = {
     root: null,
-    rootMargin: "10%",
+    rootMargin: "0%",
     threshold: 1
   }
   
@@ -28,17 +31,17 @@ const Project = (props) => {
   }, [ref, options])
 
   let right = (
-  <div ref={ref} className="project-container">
-    <p className={isVisible ? "view" : ""}>{props.textBody}</p>
-    <img className={isVisible ? "view" : "no-view"} id="project-image" src={props.imgSrc}></img>
+  <div ref={ref} className={isVisible ? "project-container show" : "project-container"}>
+    <p className={isVisible ? "view" : "off-right"}>{props.textBody}</p>
+    <img className={isVisible ? "view" : "off-left"} id="project-image" src={props.imgSrc}></img>
   </div>
 
   )
 
   let left = (
-    <div ref={ref} className="project-container">
-      <img className={isVisible ? "view" : "no-view"} id="project-image" src={props.imgSrc}></img>
-      <p className={isVisible ? "view" : ""}>{props.textBody}</p>
+    <div ref={ref} className={isVisible ? "project-container show" : "project-container"}>
+      <img className={isVisible ? "view" : "off-right"} id="project-image" src={props.imgSrc}></img>
+      <p className={isVisible ? "view" : "off-left"}>{props.textBody}</p>
     </div>
   
   )
