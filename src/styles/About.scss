@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+
 .about-container{
   position: relative;
   overflow-x:hidden;
+  font-family: 'Roboto Slab', serif;
   
+  h2{
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    font-size: 8vh;
+  }
 
   .about-spacer{
     height: 15vh;
@@ -10,7 +18,7 @@
   }
 
   .about-spacer-v2{
-    height: 15vh;
+    // height: 5vh;
     width: 50%;
 
   }
@@ -19,6 +27,9 @@
     width: 30%;
     border-right: none;
     margin-left: 50%;
+    background-color: rgb(215, 235, 248);
+    border-radius: 20px;
+    height: 30vh;
 
 
     .off-right{
@@ -27,14 +38,16 @@
     }
 
     .question{
+      font-size: 4vh;;
+      display: inline-block;
       margin-left: 10%;
-      transform:translateX(0);
-      transition: transform .2s cubic-bezier(0, 0.48, 1, 1);
+      // transform:translateX(0);
+      // transition: transform .2s cubic-bezier(0, 0.48, 1, 1);
       margin-bottom: 5%;
-      border-bottom: 1px solid gray;
     }
 
     .answer{
+      margin-bottom: 5%;
       margin-left: 10%;
       transform:translateX(0);
       transition: transform .8s cubic-bezier(0, 0.48, 1, 1);
@@ -46,6 +59,10 @@
     width: 30%;
     border-left: none;
     margin-left: 20%;
+    background-color: rgb(215, 235, 248);
+    border-radius: 10px;
+    height: 30vh;
+
 
     .off-left{
       transform: translateX(-50vw);
@@ -53,14 +70,17 @@
     }
 
     .question{
+      font-size: 4vh;
+      display: inline-block;
       margin-right: 10%;
-      transform:translateX(0);
-      transition: transform .2s cubic-bezier(0, 0.48, 1, 1);
+      // transform:translateX(0);
+      // transition: transform .2s cubic-bezier(0, 0.48, 1, 1);
       margin-bottom: 5%;
-      border-bottom: 1px solid gray;
+
     }
 
     .answer{
+      margin-bottom: 5%;
       margin-right: 10%;
       transform:translateX(0);
       transition: transform .8s cubic-bezier(0, 0.48, 1, 1);
