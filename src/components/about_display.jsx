@@ -16,7 +16,7 @@ const AboutDisplay = (props) => {
 
   const options = {
     root: null,
-    rootMargin: "-30%",
+    rootMargin: "-20%",
     threshold: 0
   }
   
