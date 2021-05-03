@@ -1,12 +1,39 @@
 .welcomeModal{
-  background-color: black;
-  height: 100%;
-  width: 100%;
-  position: fixed;
+  display: flex;
   top: 0;
   left: 0;
   z-index: 1000;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+  .block-1,
+  .block-2,
+  .block-3,
+  .block-4{
+    display: block;
+    background-color: black;
+    height: 50%;
+    width: 50%;
+    position: fixed;
+    z-index:1000;
+    transition: transform .4s cubic-bezier(0, 0.48, 1, 1);
+  }
+
+  .block-2{
+    left: 50%;
+    top:0
+  }
+  .block-3{
+    left: 50%;
+    top: 50%; 
+  }
+
+  .block-4{
+    left: 0;
+    top: 50%
+  }
+
 
   h2{
     color:white;
@@ -21,4 +48,35 @@
     width: 8%;
     height: 4%;
   }
+}
+
+.off-screen{
+
+  .block-1,
+  .block-2,
+  .block-3,
+  .block-4{
+    // transition: transform .4s cubic-bezier(0, 0.48, 1, 1);
+  }
+
+  .block-1{
+    transform: translateX(100vw);
+    transition: transform 2s cubic-bezier(0, 0.48, 1, 1);
+  }
+
+  .block-2{
+    transform: translateX(-100vh);
+    transition: transform 2s cubic-bezier(0, 0.48, 1, 1);
+  }
+
+  .block-3{
+    transform: translateX(-100vw);
+    transition: transform 2s cubic-bezier(0, 0.48, 1, 1);
+  }
+
+  .block-4{
+    transform: translateX(100vh);
+    transition: transform 2s cubic-bezier(0, 0.48, 1, 1);
+  }
+
 }

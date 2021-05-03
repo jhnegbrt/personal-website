@@ -20,6 +20,7 @@ function App() {
   
   let site = (
     <div className="app">
+      <WelcomeModal className="off-screen"/>
       <Navbar />
       <Home />
       <About />
@@ -33,6 +34,7 @@ function App() {
     <div className="app">
       <WelcomeModal closeModal={toggleModal}/>
     </div>
+
   )
   return (
     
