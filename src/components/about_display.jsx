@@ -8,9 +8,9 @@ const AboutDisplay = (props) => {
 
   const callback = (entries) =>{
     const [entry] = entries
-    // if (entry.isIntersecting === true){
+    if (entry.isIntersecting === true){
       setIsVisible(entry.isIntersecting)
-    // }
+    }
     
   }
 
@@ -31,17 +31,21 @@ const AboutDisplay = (props) => {
   }, [ref, options])
 
   let right = (
-    <div ref={ref} className={isVisible ? "about-container-right show" : "about-container-right"}>
+    <div className={isVisible ? "about-container-right show" : "about-container-right"}>
       <p className={isVisible ? "question" : "off-right"}>{props.question}</p>
       <p className={isVisible ? "answer" : "off-right"}>{props.answer}</p>
+      <div className="about-spacer-v2"></div>
+      <div ref={ref}></div>
     </div>
 
   )
 
   let left = (
-    <div ref={ref} className={isVisible ? "about-container-left show" : "about-container-left"}>
-      <p className={isVisible ? "questsion" : "off-left"}>{props.question}</p>
+    <div className={isVisible ? "about-container-left show" : "about-container-left"}>
+      <p className={isVisible ? "question" : "off-left"}>{props.question}</p>
       <p className={isVisible ? "answer" : "off-left"}>{props.answer}</p>
+      <div className="about-spacer-v2"></div>
+      <div ref={ref}></div>
     </div>
   
   )

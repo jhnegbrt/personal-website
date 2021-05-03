@@ -3,9 +3,15 @@
   overflow-x:hidden;
 
   .about-spacer{
-    height: 10vh;
+    height: 15vh;
     width: 50%;
     border-right: 1px solid gray
+  }
+
+  .about-spacer-v2{
+    height: 15vh;
+    width: 50%;
+    // border-right: 1px solid gray
   }
 
   .about-container-right{
@@ -16,18 +22,21 @@
 
     .off-right{
       transform: translateX(50vw);
+      transition: transform .4s cubic-bezier(0, 0.48, 1, 1);
     }
 
     .question{
       margin-left: 10%;
       transform:translateX(0);
       transition: transform .2s cubic-bezier(0, 0.48, 1, 1);
+      margin-bottom: 5%
     }
 
     .answer{
       margin-left: 10%;
       transform:translateX(0);
       transition: transform .8s cubic-bezier(0, 0.48, 1, 1);
+      margin-bottom: 5%
     }
   }
 
@@ -43,13 +52,17 @@
     }
 
     .question{
+      margin-right: 10%;
       transform:translateX(0);
-      transition: transform .4s cubic-bezier(0, 0.48, 1, 1);
+      transition: transform .2s cubic-bezier(0, 0.48, 1, 1);
+      margin-bottom: 5%;
     }
 
     .answer{
+      margin-right: 10%;
       transform:translateX(0);
-      transition: transform .7s cubic-bezier(0, 0.48, 1, 1);
+      transition: transform .8s cubic-bezier(0, 0.48, 1, 1);
+      margin-bottom: 5%
     }
 
   }
