@@ -15,6 +15,7 @@ const Modal = React.createContext()
 function App() {
   const [modal, setModal] = useState(true)
   const toggleModal = () =>{
+    debugger
     setModal(false)
   }
   

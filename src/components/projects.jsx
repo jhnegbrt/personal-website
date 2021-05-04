@@ -17,13 +17,15 @@ function Projects(){
 
     <div name="projects" className="projects-container">
       <div className="spacer-div"></div>
-      <Project imgSrc={"/sleuth-page.PNG"} imageSide={"left"} textBody={sleuth}/>
+      <div className="row">
+        <Project imgSrc={"/sleuth-page.PNG"} imageSide={"left"} textBody={sleuth}/>
+        <Project imgSrc={"/opening-moves-page.PNG"} imageSide={"right"} textBody={openingMoves}/>
+      </div>
+      <div className="row">
+        <Project imgSrc={"/swooped-page.PNG" } imageSide={"left"} textBody={swoopedText}/>
+        <Project imgSrc={"/wtrcoolr-page.PNG"} imageSide={"right"} textBody={wtrcoolrText}/>
+      </div>
       <div className="spacer-div"></div>
-      <Project imgSrc={"/opening-moves-page.PNG"} imageSide={"right"} textBody={openingMoves}/>
-      <div className="spacer-div"></div>
-      <Project imgSrc={"/swooped-page.PNG" } imageSide={"left"} textBody={swoopedText}/>
-      <div className="spacer-div"></div>
-      <Project imgSrc={"/wtrcoolr-page.PNG"} imageSide={"right"} textBody={wtrcoolrText}/>
       <div className="spacer-div"></div>
       {/* <Project imgSrc={"/sleuth-page.PNG"} imageSide={"left"} textBody={sleuth}/> */}
     </div>
