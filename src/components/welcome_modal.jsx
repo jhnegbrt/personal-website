@@ -7,23 +7,26 @@ class WelcomeModal extends React.Component{
   }
 
   render(){
-    let welcomeModal = (
+    return(
       <div className={this.props.className ? "welcomeModal off-screen" : "welcomeModal"}>
         <div className="block-1">
         </div>
-        <div className="block-2"></div>
-        <div className="block-3"></div>
-        <div className="block-4">
-          <div className="modal-intro">
+        <div className="block-2">
+          <div className="modal-intro-left">
             <h2>Welcome</h2>
             <h3>johnwegbert.com</h3>
+          </div>
+        </div>
+        <div className="block-3">
+          <div className="modal-intro-right">
             <button onClick={this.props.closeModal}>Enter</button>
           </div>
         </div>
+        <div className="block-4">
+          <a>Github</a>
+          <a>LinkedIn</a>
+        </div>
       </div>
-    )
-    return(
-      welcomeModal
     )
   }
 }

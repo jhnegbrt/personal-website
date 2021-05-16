@@ -6,6 +6,7 @@ import About from './components/about'
 import Technologies from './components/technologies'
 import Projects from './components/projects'
 import WelcomeModal from './components/welcome_modal'
+import MobileWelcomeModal from './components/mobile/mobile_welcome_modal'
 import './index.css'
 // import MobileNavbar from './components/navbar_mobile'
 
@@ -15,13 +16,14 @@ const Modal = React.createContext()
 function App() {
   const [modal, setModal] = useState(true)
   const toggleModal = () =>{
-    debugger
     setModal(false)
   }
+
+  let width = window.innerWidth
   
   let site = (
     <div className="app">
-      <WelcomeModal className="off-screen"/>
+      {width > 768 ? <WelcomeModal className="off-screen"/> : <MobileWelcomeModal className="off-scrren" />}
       <Navbar />
       <Home />
       <About />
@@ -32,15 +34,16 @@ function App() {
   let welcomeModal = (
     
     <div className="app">
-      <WelcomeModal closeModal={toggleModal}/>
+      {width > 768 ? <WelcomeModal closeModal={toggleModal}/> : <MobileWelcomeModal closeModal={toggleModal}/>}
     </div>
 
   )
   return (
     
-    <div className="app">
+    <div>
       {modal ? welcomeModal : site }
     </div>
+
   );
 }
 
