@@ -18,12 +18,12 @@ function Projects(){
     <div name="projects" className="projects-container">
       <div className="spacer-div"></div>
       <div className="row">
-        <Project imgSrc={"/sleuth-page.PNG"} imageSide={"left"} textBody={sleuth}/>
-        <Project imgSrc={"/opening-moves-page.PNG"} imageSide={"right"} textBody={openingMoves}/>
+        <Project imgSrc={"/sleuth-page.PNG"} imageSide={"right"} textBody={sleuth}/>
+        <Project imgSrc={"/opening-moves-page.PNG"} imageSide={"left"} textBody={openingMoves}/>
       </div>
       <div className="row">
-        <Project imgSrc={"/swooped-page.PNG" } imageSide={"left"} textBody={swoopedText}/>
-        <Project imgSrc={"/wtrcoolr-page.PNG"} imageSide={"right"} textBody={wtrcoolrText}/>
+        <Project imgSrc={"/swooped-page.PNG" } imageSide={"right"} textBody={swoopedText}/>
+        <Project imgSrc={"/wtrcoolr-page.PNG"} imageSide={"left"} textBody={wtrcoolrText}/>
       </div>
       <div className="spacer-div"></div>
       <div className="spacer-div"></div>

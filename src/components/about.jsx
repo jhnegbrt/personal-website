@@ -12,7 +12,7 @@ function About(){
   let secondQuestion = "What makes me tick:"
   let secondAnswer = "Solving problems that require extending the boundaries of my knowledge"
   let thirdQuestion = "My favorite projects:"
-  let thirdAnswer = "Found novel use cases for familiar technology or required learning and utilizing an unfamiliar technology"
+  let thirdAnswer = "Involve finding novel use cases for familiar technology or require learning and utilizing an unfamiliar technology"
   let fourthQuestion ="When I'm not at my desk?"
   let fourthAnswer = "In the winter, on Skis; In the summer, on the golf course; Either way, likely with my partner (see above)"
 
