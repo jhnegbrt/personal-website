@@ -94,6 +94,11 @@
 
   // Mobile
 
+  .mobile-modal-left{
+    flex-direction: column;
+    align-items: center;
+  }
+
   .mobile-modal-left,
   .mobile-modal-right{
     display: flex;
