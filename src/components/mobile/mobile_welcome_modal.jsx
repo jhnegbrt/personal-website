@@ -20,7 +20,7 @@ class MobileWelcomeModal extends React.Component{
           </div>
         </div>
         <div className="mobile-block-3">
-          <div className="modal-modal-bottom">
+          <div className="mobile-modal-bottom">
             <a>Github</a>
             <a>LinkedIn</a>
           </div>
