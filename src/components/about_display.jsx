@@ -34,7 +34,6 @@ const AboutDisplay = (props) => {
     <div className="about-container-right">
       <p className={isVisible ? "question" : "off-right"}>{props.question}</p>
       <p className={isVisible ? "answer" : "off-right"}>{props.answer}</p>
-      <div className="about-spacer-v2"></div>
       <div ref={ref}></div>
     </div>
 

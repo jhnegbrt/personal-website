@@ -26,7 +26,7 @@ function About(){
       <AboutDisplay question={secondQuestion} answer={secondAnswer} side={"right"}/>
       <AboutDisplay question={thirdQuestion} answer={thirdAnswer} side={"left"}/>
       <AboutDisplay question={fourthQuestion} answer={fourthAnswer} side={"right"}/>
-      <div className="about-spacer"></div>
+      <div className="about-spacer-v2"></div>
     </div>
 
   )
