@@ -138,7 +138,6 @@
     margin-top: 80vh;
     height: 20vh;
     width: 100vw;
-    border: 1px solid green;
     transition-delay: 1.5s;
   }
 
@@ -153,7 +152,6 @@
 
   }
 
-  .mobile-block-1,
   .block-2{
     background-color: rgb(255, 255, 255);
     transform: translateX(-100vw);
@@ -161,7 +159,6 @@
 
   }
 
-  .mobile-block-2,
   .block-3{
     background-color: rgb(215, 235, 248);
     transform: translateX(100vw);
@@ -174,6 +171,20 @@
     background-color: rgb(255, 255, 255);
     transform: translateY(100vh);
     border-top: 1px solid black
+  }
+
+  .mobile-block-1{
+    transform: translateX(-100vw);
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid black;
+    border-right: 1px solid black
+  }
+
+  .mobile-block-2{
+    transform: translateX(100vw);
+    background-color: rgb(215, 235, 248);
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
   }
 
 
