@@ -20,6 +20,24 @@
   .row{
     display: flex;
   }
+
+  @media screen and (max-width: 768px){
+    h2{
+      font-size: 7vh;
+    }
+
+    .row{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .project-container{
+      flex-direction: column;
+      p{
+        order: 2
+      }
+    }
+  }
 }
 
 .project-container{
