@@ -16,7 +16,7 @@ function Projects(){
   return(
 
     <div name="projects" className="projects-container">
-      <div className="spacer-div"></div>
+      <h2>Notable Projects</h2>
       <div className="row">
         <Project imgSrc={"/sleuth-page.PNG"} imageSide={"right"} textBody={sleuth}/>
         <Project imgSrc={"/opening-moves-page.PNG"} imageSide={"left"} textBody={openingMoves}/>

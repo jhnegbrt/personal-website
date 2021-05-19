@@ -2,6 +2,14 @@
   position: relative;
   overflow-x:hidden;
   border-top: 1px solid gray;
+  padding-top: 10vh;
+
+  h2{
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    font-size: 8vh;
+    padding-bottom: 5vh;
+  }
 
   .spacer-div{
     height: 10vh;
@@ -24,12 +32,13 @@
   border: 1px solid gray;
   border-left:none;
   border-right:none;
+
   
   p{
     width: 40%;
     text-align: center;
     transition: transform .4s cubic-bezier(0, 0.48, 1, 1);
-    transform: rotateY(90deg);
+    transform: rotateX(90deg);
   }
 
   .view{
@@ -44,11 +53,11 @@
   }
 
   .off-left{
-    transform: rotateY(-90deg);
+    transform: rotateX(-90deg);
   }
 
   .off-right{
-    transform: rotateY(-90deg);
+    transform: rotateX(-90deg);
   }
 }
 
