@@ -20,7 +20,6 @@
   }
 
   .about-spacer-v2{
-    // height: 5vh;
     width: 50%;
 
   }
@@ -92,4 +91,31 @@
     }
 
   }
+
+  @media screen and (max-width: 768px){
+
+
+
+    .about-container-right,
+    .about-container-left{
+      width: 85%;
+      margin-left: 10%;
+
+      .question,
+      .answer{
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .off-left{
+        transform: translateX(-100vw);
+        transition: transform .4s cubic-bezier(0, 0.48, 1, 1);
+      }
+  
+      .off-right{
+        transform: translateX(100vw);
+        transition: transform .4s cubic-bezier(0, 0.48, 1, 1);
+      }
+    } 
+  }
 }
+

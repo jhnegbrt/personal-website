@@ -65,7 +65,7 @@ class Navbar extends React.Component{
     let mobileNavbar = (
       <div>
         <header className="mobile-header">
-          <h3>John Egbert</h3> 
+          <h3>JE</h3> 
           <button onClick={this.toggleMenu}>Menu</button>
         </header>
         <div id="mobile-menu" className={visibility}>
