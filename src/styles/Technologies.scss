@@ -2,25 +2,43 @@
 
   // width: 100vw;
   display: flex;
-}
 
-.technology-logos {
-  div{
-    width: 100%;
-    margin-left: 10%;
-    // margin-right: auto;
+  .technology-logos {
+    div{
+      width: 100%;
+      margin-left: 10%;
+      // margin-right: auto;
+    }
+    
+    img{
+      width: 15%;
+      margin: 1%;
+    }
+    #git, #webpack #node, #express, #mongo, #jQuery{
+      width: 20%;
+      margin: 1.5%;
+      transform: translate()
+    }
   }
   
-  img{
-    width: 15%;
-    margin: 1%;
+  #css{
+    width: 10.5%;
   }
-  #git, #webpack #node, #express, #mongo, #jQuery{
-    width: 20%;
-    margin: 1.5%
+
+  @media screen and (max-width: 768px){
+    flex-direction: column;
+
+    .technology-logos{
+      order: 2;
+
+      div{
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+      }
+    }
+
+
   }
 }
 
-#css{
-  width: 10.5%;
-}

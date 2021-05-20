@@ -33,8 +33,14 @@
 
     .project-container{
       flex-direction: column;
+      width: 75%;
+
+      #project-image{
+        width: 90%;
+      }
       p{
-        order: 2
+        order: 2;
+        width: 70%
       }
     }
   }
@@ -47,13 +53,15 @@
   justify-content: space-evenly;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid gray;
+  // border: 1px solid gray;
   border-left:none;
   border-right:none;
   color: white;
-  background-color: black;
+  background-color: rgb(46, 46, 46);
   padding: 3%;
+  // box-shadow: 0 0 20px 10px #141414;
   margin: 2%;
+  // border-radius: 25px;
 
   
   p{
@@ -83,8 +91,8 @@
   }
 }
 
-.show{
-  border-left: 1px solid gray;
-  border-right: 1px solid gray
-}
+// .show{
+//   border-left: 1px solid gray;
+//   border-right: 1px solid gray
+// }
 
