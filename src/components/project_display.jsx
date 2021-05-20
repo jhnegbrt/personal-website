@@ -31,7 +31,7 @@ const Project = (props) => {
   }, [ref, options])
 
   let right = (
-  <div ref={ref} className={isVisible ? "project-container show" : "project-container"}>
+  <div ref={ref} className={isVisible ? "project-container reveal" : "project-container"}>
     <div className="inner-project">
       <div className="project-front">
         <p className={isVisible ? "view" : "off-right"}>{props.textBody}</p>
@@ -47,8 +47,15 @@ const Project = (props) => {
 
   let left = (
     <div ref={ref} className={isVisible ? "project-container show" : "project-container"}>
-      <img className={isVisible ? "view" : "off-right"} id="project-image" src={props.imgSrc}></img>
-      <p className={isVisible ? "view" : "off-left"}>{props.textBody}</p>
+      <div className="inner-project">
+        <div className="project-front">
+          <img className={isVisible ? "view" : "off-right"} id="project-image" src={props.imgSrc}></img>
+          <p className={isVisible ? "view" : "off-left"}>{props.textBody}</p>
+        </div>
+        <div className="project-back">
+          <p>This is the back of the card</p>
+        </div>
+      </div>
     </div>
   
   )

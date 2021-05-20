@@ -57,7 +57,7 @@
   border-left:none;
   border-right:none;
   color: white;
-  background-color: rgb(46, 46, 46);
+  background-color: transparent;
   padding: 3%;
   // box-shadow: 0 0 20px 10px #141414;
   margin: 2%;
@@ -76,7 +76,7 @@
   &:hover .inner-project{
     transform: rotateY(180deg) scale(2) translateX(-100px);
     z-index: 10;
-
+    position: relative;
   }
   .project-back,
   .project-front{
@@ -85,7 +85,7 @@
     height:100%;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
-    opacity: .99;
+    // opacity: .99;
 
   }
 
