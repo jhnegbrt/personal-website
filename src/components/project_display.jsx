@@ -32,7 +32,7 @@ const Project = (props) => {
 
   let right = (
   <div ref={ref} className={isVisible ? "project-container reveal" : "project-container"}>
-    <div className="inner-project">
+    <div className="inner-project-left">
       <div className="project-front">
         <p className={isVisible ? "view" : "off-right"}>{props.textBody}</p>
         <img className={isVisible ? "view" : "off-left"} id="project-image" src={props.imgSrc}></img>
@@ -46,8 +46,8 @@ const Project = (props) => {
   )
 
   let left = (
-    <div ref={ref} className={isVisible ? "project-container show" : "project-container"}>
-      <div className="inner-project">
+    <div ref={ref} className={isVisible ? "project-container reveal" : "project-container"}>
+      <div className="inner-project-right">
         <div className="project-front">
           <img className={isVisible ? "view" : "off-right"} id="project-image" src={props.imgSrc}></img>
           <p className={isVisible ? "view" : "off-left"}>{props.textBody}</p>
