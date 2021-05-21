@@ -36,6 +36,32 @@
     .project-container{
       flex-direction: column;
       width: 75%;
+      height: 50vh;
+
+      .inner-project-left,
+      .inner-project-right{
+
+        .project-front{
+          flex-direction: column;
+        }
+
+        .project-back{
+          transform: rotateX(180deg);
+        }
+
+      }
+
+      &:hover .inner-project-right{
+        transform: rotateX(180deg) scale(1.4) scaleY(2);
+        z-index: 10;
+        position: relative;
+      }
+    
+      &:hover .inner-project-left{
+        transform: rotateX(180deg) scale(1.4) scaleY(2);
+        z-index: 10;
+        position: relative;
+      }
 
       #project-image{
         width: 90%;
@@ -57,7 +83,7 @@
   margin-right: auto;
   border-left:none;
   border-right:none;
-  color: white;
+  color: black;
   background-color: transparent;
   margin: 3%;
 
@@ -104,7 +130,6 @@
   }
   .project-back{
     transform: rotateY(180deg);
-    // background-color: #2e2e2e;
   }
   p{
     width: 40%;
